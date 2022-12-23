@@ -48,7 +48,7 @@
         <section class="hero section">
           <div class="hero-container container">
             <h1 class="hero-title centred">Effective Solutions for Your Business</h1>
-            <button class="hero-btn btn" type="button">Order Service</button>
+            <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
           </div>
         </section>
         <!-- Section-advantages -->
@@ -362,5 +362,16 @@
             </div>
         </div>
     </footer>
+    <!-- Modal -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" data-modal-close>
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="/js/modal.js"></script>
 </body>
 </html>
